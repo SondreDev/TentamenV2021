@@ -7,6 +7,19 @@ ul.topnav li a.active {background-color: #0576FA;}
 ul.topnav li.right {float: right;}
 @media screen and (max-width: 600px) {ul.topnav li.right, ul.topnav li {float: none;}}
 
-.SB {margin-top: 2px; margin-left: 7px;}
+.SB {margin-top: 10px; margin-bottom: 10px; float: right; width: 2%; height: 2%; margin-right: 10px;}
 
-.article {width: 50%; margin-left: auto; margin-right: auto; font-family: Arial, Helvetica, sans-serif;}
+.article {width: 50%; margin-left: auto; margin-right: auto;}
+
+.overskrift_1 {font-family: Verdana; font-size: 16pt; font-weight: bold;}
+.overskrift_2 {font-family: Verdana; font-size: 12pt; font-weight: bold;}
+.ingress {font-family: Verdana; font-size: 10pt; font-weight: bold;}
+.brødtekst {font-family: Verdana; font-size: 10pt;}
+
+.knapp {display: inline-block;border-radius: 4px;background-color: #333;border: none;color: #FFFFFF;text-align: center;font-size: 28px;padding: 20px; width: 200px; transition: all 0.5s;cursor: pointer;margin: 10px; margin-bottom: 15px;}
+.knapp span {cursor: pointer;display: inline-block;position: relative;transition: 0.5s;}
+.knapp span::after {content: '\00bb';position: absolute;opacity: 0; top: 0;right: -20px;transition: 0.5;}
+.knapp:hover span {padding-right: 25px;}
+.knapp:hover span::after {opacity: 1;right: 0;}
+
+.link {color: #f8f8ff;text-decoration: none; background-color: none; font-size: 20px;}  
